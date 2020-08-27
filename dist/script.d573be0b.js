@@ -118,29 +118,66 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/script.js":[function(require,module,exports) {
-"use strict";
+// EMAIL FORM MADE WITH FORMSPREE
+window.addEventListener("DOMContentLoaded", function () {
+  // get the form elements defined in your form HTML above
+  var form = document.getElementById("my-form");
+  var button = document.getElementById("my-form-button");
+  var status = document.getElementById("my-form-status"); // Success and Error functions for after the form is submitted
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
+  function success() {
+    form.reset();
+    button.style = "display: none ";
+    status.innerHTML = "Thanks!";
+  }
 
-var test = function test() {
-  console.log("this is from the script file");
-};
+  function error() {
+    status.innerHTML = "Oops! There was a problem.";
+  } // handle the form submission event
 
-var _default = test; // Email form
-// var submitBtn = document.querySelector("#submit-btn");
-// var nameInput = document.querySelector("#name-input");
-// var emailInput = document.querySelector("#email-input");
-// var response = document.querySelector("#response");
-// submitBtn.addEventListener("click", function(event) {
-//   event.preventDefault();
-//   var response = "Thank you for your submission " + nameInput.value + "! We will reach out to you at " + emailInput.value + ".";
-//   submissionResponseEl.textContent = response;
+
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var data = new FormData(form);
+    ajax(form.method, form.action, data, success, error);
+  });
+}); // helper function for sending an AJAX request
+
+function ajax(method, url, data, success, error) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(method, url);
+  xhr.setRequestHeader("Accept", "application/json");
+
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+
+    if (xhr.status === 200) {
+      success(xhr.response, xhr.responseType);
+    } else {
+      error(xhr.status, xhr.response, xhr.responseType);
+    }
+  };
+
+  xhr.send(data);
+} // CONTACT FORM
+//   $('#contact-form').submit(function(e) {
+//     e.preventDefault();
+//     $.ajax({
+//       url: 'https://formspree.io/mattwilliams85@gmail.com',
+//       method: 'POST',
+//       data: { message: $('form').serialize() },
+//       dataType: 'json'
+//     }).done(function(response) {
+//       $('#success').addClass('expand');
+//       $('#contact-form')
+//         .find('input[type=text], input[type=email], textarea')
+//         .val('');
+//     });
+//   });
+//   $('#close').click(function() {
+//     $('#success').removeClass('expand');
+//   });
 // });
-
-exports.default = _default;
 },{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -169,7 +206,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52021" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55912" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

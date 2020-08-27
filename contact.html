@@ -40,35 +40,33 @@
       </div>
     </header>
 
-      <div class="card-main-content">
-        <div class="card-body" id="email-form">
-          <h3>Email Me</h3>
+    <!-- EMAIL FORM MADE WITH THE HELP OF FORMSPREE -->
+    <div class="card-main-content">
+      <div class="card-body" id="email-form">
+        <h3>Email Me</h3>
+      </div>
+     
+      <form id="my-form" action="https://formspree.io/mbjzvdlw"method="POST">
+        <div class="form-group">
+          <label for="name-input"> Name: </label>
+          <input type="name" class="form-control" id="name-input" placeholder="Your Name">
         </div>
-        <form id="form">
-          <div class="form-group">
-            <label for="name-input"> Name: </label>
-            <input type="email" class="form-control" id="name-input" placeholder="Your Name">
-          </div>
-          <div class="form-group">
-            <label for="email-input"> Email: </label>
-            <input type="email" class="form-control" id="email-input" placeholder="Your Email">
-          </div>
+        <div class="form-group">
+          <label for="email-input"> Email: </label>
+          <input type="email" class="form-control" id="email-input" placeholder="Your Email">
+        </div>
   
-          <div class="form-group">
-            <label for="email-textarea"> Message: </label>
-            <textarea class="form-control" id="email-textarea" rows="6"></textarea>
-         </div>
-        </form>
+        <div class="form-group">
+          <label for="email-textarea"> Message: </label>
+          <textarea class="form-control" id="email-textarea" rows="6"></textarea>
+        </div>
 
         <div class="col-sm-6 col-md-6 col-lg-6">
-          <button type="button" onclick="submitButton()" class="btn btn-light" id="submi-btn" value="Submit">Submit</button>
+          <button id="my-form-button">Submit</button>
+          <p id="my-form-status"></p>
         </div>
-      </div>
-
-      <h5 id="response"></h5>
-
-    
-    </main>
+      </form>
+    </div>
 
     <footer class="footer" style="background-color: #0e4442;">
       <div class="container">
@@ -78,6 +76,7 @@
 
     <script src="js/portfolio.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
   </body>
