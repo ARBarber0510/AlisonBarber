@@ -1,0 +1,19 @@
+{
+  "name": "alisonbarberportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ARBarber0510/AlisonBarberPortfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ARBarber0510/AlisonBarberPortfolio/issues"
+  },
+  "homepage": "https://github.com/ARBarber0510/AlisonBarberPortfolio#readme"
+}
