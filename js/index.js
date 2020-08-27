@@ -1,35 +1,3 @@
-// SCROLL ANIMATIONS
-function onScroll(items, elemTrigger) {
-    var offset = $(window).height() / 1.6;
-    items.each(function() {
-        var elem = $(this),
-        animationClass = elem.attr('data-animation'),
-        animationDelay = elem.attr("data-delay");
+import Swup from 'swup';
 
-        elem.css({
-            '-webkit-animation-delay': animationDelay,
-            '-moz-animation-delay': animationDelay,
-            'animation-delay': animationDelay
-        });
-
-        var trigger = elemTrigger ? trigger : elem;
-
-        trigger.waypoint(
-            function() {
-                elem.addClass('animated').addClass(animationClass);
-                if (elem.get(0).id === 'gallery') mixClear();
-            },
-            {
-                triggerOnce: true,
-                offset: offset
-            }
-        );
-    });
-}
-
-setTimeout(function() {
-    onScrollInit($('.waypoint'));
-}, 10);
-
-
-
+const swup = new Swup();
