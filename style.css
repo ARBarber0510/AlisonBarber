@@ -64,6 +64,14 @@ h2 {
 .btn {
     align-content: center;
 }
+.transition-fade {
+    transition: .5s;
+    opacity: 1;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
 
 @media (max-width: 1060px) {
     .media::after{
