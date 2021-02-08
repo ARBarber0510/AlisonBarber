@@ -1,35 +1,51 @@
 {
-  "name": "alisonbarberportfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ARBarber0510/AlisonBarberPortfolio.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ARBarber0510/AlisonBarberPortfolio/issues"
-  },
-  "homepage": "https://github.com/ARBarber0510/AlisonBarberPortfolio#readme",
-  "dependencies": {
-    "@barba/core": "^2.9.7",
-    "@dogstudio/highway": "^2.2.1",
-    "@swup/js-plugin": "^1.0.4",
-    "@swup/overlay-theme": "^1.1.1",
-    "gsap": "^3.5.1",
-    "node-modules-resolve": "^1.3.1",
-    "resolve-module": "^0.2.0",
-    "swup": "^2.0.11"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.11.4",
-    "@babel/preset-env": "^7.11.0",
-    "@babel/register": "^7.10.5",
-    "transpile": "^2.7.2"
-  }
+    "title": "Stylish Portfolio",
+    "name": "startbootstrap-stylish-portfolio",
+    "version": "5.0.9",
+    "scripts": {
+        "start": "node_modules/.bin/gulp watch"
+    },
+    "description": "A stylish portfolio HTML template built with Bootstrap",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://startbootstrap.com/theme/stylish-portfolio",
+    "bugs": {
+        "url": "https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/issues",
+        "email": "feedback@startbootstrap.com"
+    },
+    "license": "MIT",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (https://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/StartBootstrap/startbootstrap-stylish-portfolio.git"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "5.15.1",
+        "bootstrap": "4.5.3",
+        "jquery": "^3.5.1",
+        "jquery.easing": "^1.4.1",
+        "simple-line-icons": "2.5.5"
+    },
+    "devDependencies": {
+        "browser-sync": "2.26.13",
+        "del": "6.0.0",
+        "gulp": "4.0.2",
+        "gulp-autoprefixer": "7.0.1",
+        "gulp-clean-css": "4.3.0",
+        "gulp-header": "2.0.9",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "2.0.0",
+        "gulp-sass": "4.1.0",
+        "gulp-uglify": "3.0.2",
+        "merge-stream": "2.0.0"
+    }
 }

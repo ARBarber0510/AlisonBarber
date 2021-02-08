@@ -1,83 +1,290 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Alison Barber || Home</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<html lang="en">
 
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-     <!-- Purecss Stylesheet -->
-     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" 
-     integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" />
-     <link rel="stylesheet" href="style.css">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Alison Barber Portfolio</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
 </head>
 
-<body class="d-flex flex-column">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-*" style="background-color: #0e4442;">
-        <a class="navbar-brand" href="/index.html">Alison Barber<span class="sr-only">(current)</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="/biography.html">Biography</a>
-                <a class="nav-item nav-link" href="/portfolio.html">Portfolio</a>
-                <a class="nav-item nav-link" href="/contact.html">Contact</a>
-            </div>
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">Alison Barber</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">About Me</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">Alison Barber</h1>
+      <h3 class="mb-5">
+        
+        <em>816-308-1182</em>
+        <br>
+        <em>arbarber.ab@gmail.com</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <img src="./img/headshot-1.jpg">
+          <p class="lead mb-5">
+            Junior web developer with a background in customer and client relations. 
+            Recently earned a certificate in full stack web development from Northwestern University, with newly developed skills in CSS, JavaScript, Node.js, and responsive web design. 
+            Creative, disciplined, and adaptable collaborator focused on producing captivating applications that engage target audience through effectual user experience. 
+            Recently worked on a team of four to create an interactive dining app which connected patrons with restaurants in their community. 
+            The purpose of this project is to provide a unique dining experience for app users while also boosting economic growth for businesses impacted by COVID-19.
+          </p>
+          <!-- <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
+            <a href="https://unsplash.com/">Unsplash</a>!</p> -->
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio">Portfolio</a>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="./img/AlisonBarberResume2021.pdf">Resume
+            </a>
         </div>
-    </nav>
+      </div>
+    </div>
+  </section>
 
-    <main id="swup" class="transition-fade">
+  <!-- Services
+  <section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Services</h3>
+        <h2 class="mb-5">What We Offer</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-screen-smartphone"></i>
+          </span>
+          <h4>
+            <strong>Responsive</strong>
+          </h4>
+          <p class="text-faded mb-0">Looks great on any screen size!</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pencil"></i>
+          </span>
+          <h4>
+            <strong>Redesigned</strong>
+          </h4>
+          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-like"></i>
+          </span>
+          <h4>
+            <strong>Favorited</strong>
+          </h4>
+          <p class="text-faded mb-0">Millions of users
+            <i class="fas fa-heart"></i>
+            Start Bootstrap!</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-mustache"></i>
+          </span>
+          <h4>
+            <strong>Question</strong>
+          </h4>
+          <p class="text-faded mb-0">I mustache you a question...</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
-        <div class="video-background">
-            <div class="video-wrap">
-                <div class="video">
-                    <video autoplay loop muted playsinline id="fog-vid">
-                        <source src="Assets/Images/foggy-mountain-vid.mp4" type="video/mp4">
-                    </video>
-                </div>
+  <!-- Callout -->
+  <!-- <section class="callout">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Welcome to
+        <em>your</em>
+        next website!</h2>
+      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>
+    </div>
+  </section> -->
+
+  <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Portfolio</h3>
+        <h2 class="mb-5">Recent Projects</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://github.com/JPBrickhouse/Picniq">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Picniq</div>
+                <p class="mb-0">
+                  This application is a dynamic platform, designed to provide the nearest parks and restaurants based on the users’ location.
+                  The backbone of Picniq’s functionality was constructed with Javascript and jQuery, FourSquare and Geocoder location API's.
+                </p>
+              </div>
             </div>
+            <img class="img-fluid" src="img/picniq.PNG" alt="picniq-home">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://github.com/JPBrickhouse/projectthree">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Simple State</div>
+                <p class="mb-0">SimpleState lets you REACT to the news with a clickable map interface, displaying state-level covid stats, voting facts, and senator contacts. Also includes a news search and a trending news database.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/SimpleState.PNG" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://github.com/ARBarber0510/README-Generator">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">README Generator</div>
+                <p class="mb-0">This app generates a strong & concise README through a series of questions, with the purpose of maximizing the amount of time spent on the project, itself.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/working-app-example.gif" alt="">
+          </a>
+        </div>
+        <!-- <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Workspace</div>
+                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+              </div>
+            </div> -->
+            <!-- <img class="img-fluid" src="img/portfolio-4.jpg" alt=""> -->
+          <!-- </a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me -->
+  <section class="content-section bg-primary text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Contact Me!</h2>
+      <!-- <a href="#!" class="btn btn-xl btn-light mr-4">Click Me!</a>
+      <a href="#!" class="btn btn-xl btn-dark">Look at Me!</a> -->
+    </div>
+
+     <!-- EMAIL FORM MADE WITH THE HELP OF FORMSPREE -->
+     <div class="card-main-content">
+      <div class="card-body" id="email-form">
+        <h3>Email Me</h3>
+      </div>
+    
+      <form id="my-form" action="https://formspree.io/mbjzvdlw"method="POST">
+        
+        <div class="form-group">
+          <label for="name-input"> Name: </label>
+          <input type="name" class="form-control" id="name-input" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="email-input"> Email: </label>
+          <input type="email" class="form-control" id="email-input" placeholder="Your Email">
+        </div>
+  
+        <div class="form-group">
+          <label for="email-textarea"> Message: </label>
+          <textarea class="form-control" id="email-textarea" rows="6"></textarea>
         </div>
 
-        <header id="landing-page">
-            <div class="all">
-                <div class="jumbotron">
-                    <div class="container">
-                        <h1 class="display-4">Alison Barber</h1>
-                        <h2 class="display-6">arbarber.ab@gmail.com</h2>
-                        <h2 class="display-6">816-308-1182</h2>
-                        <hr class="my-3">
-                        <a class="btn btn-secondary btn-lg" href="/biography.html" role="button">Biography</a>
-                        <a class="btn btn-secondary btn-lg" href="/portfolio.html" role="button">Portfolio</a>
-                        <a class="btn btn-secondary btn-lg" href="/contact.html" role="button">Contact</a> 
-                        <hr class="my-3">
-                    </div>
-                    <div class="social-icons text-center">
-                        <a class="social-icon" href="https://github.com/ARBarber0510" target="_blank">
-                            <img id="github" src="Assets/Images/github-icon-png-29.jpg" alt="github-logo" height="60px">
-                        </a>
-                        <a class="social-icon" href="https://www.linkedin.com/in/alison-barber-b6b45444/" target="_blank">
-                            <img id="linkedin" src="Assets/Images/linkedin-icon-no-background-11.jpg" alt="linkedin-logo" height="60px">
-                        </a>
-                        <a class="resume-icon" href="Assets/Alison Barber Resume 2020.pdf" target="_blank">
-                            <img id="resume" src="Assets/Images/resume-icon-one.png" alt="resume-logo" height="60px">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <button id="my-form-button">Submit</button>
+          <p id="my-form-status"></p>
+        </div>
 
-    </main>
+      </form>
 
-    <script src="js/script.js"></script>
-    <script src="js/index.js"></script>
-    <script src="./dist/SwupOverlayTheme.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <!-- <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#!">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li> -->
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/alison-barber-b6b45444/">
+            <i class="icon-social-linkedin"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/ARBarber0510">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Alison Barber 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
 
 </body>
+
 </html>
